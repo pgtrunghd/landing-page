@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+.product_logo{
+    flex-basis: 65%;
+    margin: 20px 0 20px 30px;
+}
+
+img{
+    width: 300px;
+}
+
+.navbar{
+    flex-basis: 35%;
+    margin: 20px 0 20px 30px;
+}
+
+.navbar ul{
+    display: flex;
+    
+}
+
+.navbar ul li{
+    list-style: none;
+    flex-grow: 1;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+}
+
+.main_page{
+    position: relative;
+    top: 90px;
+    z-index: 0;
+}
+
+.hero{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.hero form{
+    margin: 20px 0;
+}
+
+.hero #email{
+    width: 300px;
+    height: 30px;
+    border: 1px solid #000;
+    padding: 5px;
+}
+
+.hero #button{
+    margin: 15px 0;
+    text-transform: uppercase;
+    border: none;
+    background: #f2c40d;
+    font-size: 17px;
+    font-weight: 800px;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.hero #button:hover{
+    background: #ff8c1a;
+    transition: 1s ease-in-out;
+}
+
+#features{
+    margin: 100px 20px 0 20px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 50px auto;
+}
+
+.wrapper .icon{
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    color: #ff8c1a;
+}
+
+.wrapper .desc{
+    flex-basis: 60%;
+}
+
+#howitworks{
+    text-align: center;
+    margin: 70px 0;
+    
+}
+
+#howitworks iframe{
+    width: 74.27055702917772vh;
+    height: 41.777188328912466vh;
+}
+
+#pricing{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.price_wrapper{
+    border: 1px solid #000;
+    margin: 0 10px;
+    width: 310px;
+    min-width: 100px;
+}
+
+.name_product{
+    text-align: center;
+    padding: 20px 0;
+    background: #cccccc;
+}
+
+.name_product h3{
+    background: #cccccc;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.charging{
+    padding: 20px 0;
+    text-align: center;
+    font-size: 27px;
+}
+
+.detail{
+    padding: 10px 0; 
+    text-align: center;
+    font-size: 1rem;
+}
+
+.detail p{
+    padding: 5px 0;
+}
+
+.select{
+    padding: 15px 0;
+    text-align: center;
+}
+
+button{
+    padding: 10px 25px;
+    text-transform: uppercase;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    background: #f2c40d;
+}
+
+button:hover{
+    background: #ff8c1a;
+    transition: 1s ease-in-out;
+}
+
+.footer{
+    position: relative;
+    top: 100px;
+    text-align: right;
+    max-width: 990px;
+    margin: 20px auto;
+}
+
+
+.term ul{
+    display: flex;
+    background: #cccccc;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 20px;
+}
+
+.term ul li{
+    list-style: none;
+    background: #cccccc;
+    padding: 0 30px 10px 5px;
+}
+
+.term ul li a{
+    text-decoration: none;
+    background: #cccccc;
+    color: #000;
+    font-size: 15px;
+}
+
+.copyright p{
+    background: #cccccc;
+    padding-right: 20px;
+    font-size: 15px;
+    color: rgb(90, 75, 75);
+    padding-bottom: 15px;
+}
+
+@media screen and (max-width: 800px){
+    #pricing{
+        flex-direction: column;
+    }
+
+    .price_wrapper{
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    .navbar ul{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .header{
+        flex-direction: column;
+    }
+
+    .navbar{
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+
+    .main_page{
+        top: 130px;
+    }
+
+    .footer{
+        top: 130px;
+    }
+
+    .wrapper{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .wrapper .icon{
+        display: none;
+    }
+
+    #howitworks iframe{
+        width: 60vh;
+    }
+}
